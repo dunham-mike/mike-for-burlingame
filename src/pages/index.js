@@ -7,6 +7,7 @@ import InstagramIcon from '../images/instagram.svg';
 import TwitterIcon from '../images/twitter.svg';
 
 import Slideshow from '../components/slideshow';
+import HeaderInfo from '../components/headerInfo';
 
 import styled from 'styled-components'
 
@@ -58,12 +59,6 @@ const WhiteHeader = styled.div`
     background-color: white;
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
-`
-
-const WhiteSection = styled.div`
-    background-color: white;
-    padding: 3.5rem 10rem;
-    min-height: 80px;
 `
 
 const SlideshowSection = styled.div`
@@ -132,6 +127,7 @@ const FooterIconsContainer = styled.div`
 export default ({ data }) => {
     return (
         <PageContainer>
+            <HeaderInfo />
             <WhiteHeader>
                 <HeaderSectionContainer>
                     <Img fixed={data.logo.childImageSharp.fixed} />

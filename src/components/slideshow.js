@@ -31,22 +31,22 @@ const Slideshow = () => {
       <div className="slide-container">
         <Fade {...properties}>
           <EachSlide className="each-slide">
-            <img src={Image1} style={{width: '100%'}} />
+            <img src={Image1} style={{width: '100%'}} alt="Slideshow 1" />
           </EachSlide>
           <EachSlide className="each-slide">
-            <img src={Image2} style={{width: '100%'}} />
+            <img src={Image2} style={{width: '100%'}} alt="Slideshow 2" />
           </EachSlide>
           <EachSlide className="each-slide">
-            <img src={Image3} style={{width: '100%'}} />
+            <img src={Image3} style={{width: '100%'}} alt="Slideshow 3" />
           </EachSlide>
           <EachSlide className="each-slide">
-            <img src={Image4} style={{width: '100%'}} />
+            <img src={Image4} style={{width: '100%'}} alt="Slideshow 4" />
           </EachSlide>
           <EachSlide className="each-slide">
-            <img src={Image5} style={{width: '100%'}} />
+            <img src={Image5} style={{width: '100%'}} alt="Slideshow 5" />
           </EachSlide>
           <EachSlide className="each-slide">
-            <img src={Image6} style={{width: '100%'}} />
+            <img src={Image6} style={{width: '100%'}} alt="Slideshow 6" />
           </EachSlide>
         </Fade>
       </div>
