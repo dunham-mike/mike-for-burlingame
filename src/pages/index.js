@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -50,12 +51,35 @@ const WhiteTitle = styled.div`
     text-align: center;
 `
 
+const ContentLink = styled(Link)`
+    color: #164883;
+    font-weight: bold;
+`
+
 export default ({ data }) => {
     return (
-        <Layout logo={data.logo.childImageSharp.fixed}>
+        <Layout logo={data.logo.childImageSharp.fixed} homeActive={true}>
             <SlideshowSection>
                 <Slideshow />
             </SlideshowSection>
+            <BlueSection>
+                <SectionContainer>
+                    <WhiteTitle id="thank-you">
+                        THANK YOU!
+                    </WhiteTitle>
+                    <br/>
+                    As you have probably seen by now, we did not prevail in the November 2019 election.
+                    <br /><br />
+                    It's obviously disappointing, but the thing I'm feeling most now is gratitude. The final weeks before Election Day were exhausting, since it felt like Deeksha and I had been working on this campaign forever. But knowing that hundreds of people in my life were willing to knock doors, make phone calls, donate, or simply wish me luck helped me keep going. I wanted to give it my all for the many people who believed in me, especially the hundreds of people I met during the campaign who are deeply worried about the future of Burlingame and, as it turns out, the thousands of people that voted for me.
+                    <br /><br />
+                    Even though we didn't win, the issues that animated so many of us are still critical: tackling the housing crisis head-on, ensuring opportunities for our next generation of young people, improving the safety of our streets, and making sure our teachers can afford to live here.
+                    <br /><br />
+                    I hope you will all stay engaged and keep fighting for a more inclusive, prosperous, sustainable future for our city.
+                    <br /><br />
+                    Best,<br />
+                    Mike
+                </SectionContainer>
+            </BlueSection>
             <PinkSection>
                 <SectionContainer>
                     <RedTitle id="why">
@@ -65,15 +89,10 @@ export default ({ data }) => {
                     <div style={{lineHeight: '1.3rem'}}>
                         Dear Neighbor,<br/><br/>
                         Four years ago, I had just finished grad school at Stanford, and my wife Deeksha and I were looking for a place to put down roots. We were attracted to Burlingame for its convenient location, proximity to public transit, and a sense of community that we felt we could invest in for the long term. Since then, we’ve also grown to love the walkable downtown, tremendous amenities, and historical charm that makes this such a special place. However, I’m worried that the housing crisis -- combined with ever-worsening traffic and an exodus of teachers from our schools -- is poised to undermine the Burlingame we all know and love. I want to prevent that.<br/><br/>
-
                         I’m a former 5th grade math teacher, and I have spent most of the last decade helping teachers around the Bay Area and around the country leverage technology and data to improve student learning. But over the last few years, I’ve watched the quality of life deteriorate on the Peninsula: traffic is getting worse and worse, every school is seeing teachers deciding to leave because they can't afford to live nearby, and more and more young people who grew up here look at the cost of housing and either move back in with their parents or head to a more affordable part of the country.<br/><br/>
-
                         Seeing this happen, I couldn’t stand by and do nothing. Despite a very successful career in education technology, I left my full-time job and devoted myself to understanding the housing crisis and all its related impacts. After talking to dozens of experts, reading thousands of pages, and getting involved with a variety of community groups, it became clear that there are solutions that will not just reverse these alarming trends but actually make the quality of life in Burlingame better. Doing so will require us to think creatively and embrace thoughtful change, but we can leverage the very best ideas from cities around the world to create a city that is more walkable, more resilient, and more sustainable -- all while helping young people and families thrive.<br/><br/>
-
-                        I’m running for City Council to tackle these problems head-on, and I ask for both your support and your ideas. Please see my Platform page for many specific proposals on how we can keep Burlingame a great city. I would love to hear your thoughts.<br/><br/>
-
+                        I’m running for City Council to tackle these problems head-on, and I ask for both your support and your ideas. Please see <ContentLink to="/platform">my Platform page</ContentLink> for what we need to prioritize to keep Burlingame a great city. I would love to hear your thoughts.<br/><br/>
                         Together, we can preserve Burlingame as a city that our children and grandchildren will be able to enjoy too.<br/><br/>
-
                         Sincerely,<br/>
                         Mike
                     </div>

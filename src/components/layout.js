@@ -92,14 +92,19 @@ const Layout = (props) => {
             <HeaderInfo />
             <WhiteHeader>
                 <HeaderSectionContainer>
-                    <Img fixed={props.logo} />
+                    <Link to="/">
+                        <Img fixed={props.logo} />
+                    </Link>
                 </HeaderSectionContainer>
             </WhiteHeader>
             <BlueSection>
                 <NavbarContainer>
                     <LinkContainer>
-                        <HeaderLink to="/" style={{ color: '#F9BFC4' }}>
+                        <HeaderLink to="/" style={props.homeActive ? { color: '#F9BFC4' } : null}>
                             Home
+                        </HeaderLink>
+                        <HeaderLink to="#thank-you">
+                            Thank You
                         </HeaderLink>
                         <HeaderLink to="#why">
                             Why I'm Running
@@ -107,7 +112,10 @@ const Layout = (props) => {
                         <HeaderLink to="#meet">
                             Meet Mike
                         </HeaderLink>
-                        <HeaderLink to="/endorsements">
+                        <HeaderLink to="/platform" style={props.platformActive ? { color: '#F9BFC4' } : null}>
+                            Platform
+                        </HeaderLink>
+                        <HeaderLink to="/endorsements" style={props.endorsementsActive ? { color: '#F9BFC4' } : null}>
                             Endorsements
                         </HeaderLink>
                     </LinkContainer>

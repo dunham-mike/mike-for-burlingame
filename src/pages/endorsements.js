@@ -43,7 +43,7 @@ const OrgContainer = styled.div`
 const Endorsements = ({data}) => {
 
     return(
-        <Layout logo={data.logo.childImageSharp.fixed}>
+        <Layout logo={data.logo.childImageSharp.fixed} endorsementsActive={true}>
             <PinkSection>
                 <SectionContainer>
                     <RedTitle>
@@ -59,12 +59,12 @@ const Endorsements = ({data}) => {
                         <div style={{margin: '1rem 0'}}>
                             <table style={{width: '100%'}}>
                                 <tr>
-                                    <td><OrgContainer><img src={SMCDems} width="336" /></OrgContainer></td>
-                                    <td><OrgContainer><img src={NPDC} width="312" /></OrgContainer></td>
+                                    <td><OrgContainer><img src={SMCDems} width="336" alt="San Mateo County Democrats" /></OrgContainer></td>
+                                    <td><OrgContainer><img src={NPDC} width="312" alt="North Peninsula Democratic Club" /></OrgContainer></td>
                                 </tr>
                                 <tr>
-                                    <td><OrgContainer><img src={PYD} width="172" /></OrgContainer></td>
-                                    <td><OrgContainer><img src={P4E} width="291" /></OrgContainer></td>
+                                    <td><OrgContainer><img src={PYD} width="172" alt="Peninsula Young Democrats" /></OrgContainer></td>
+                                    <td><OrgContainer><img src={P4E} width="291" alt="Peninsula For Everyone" /></OrgContainer></td>
                                 </tr>
                             </table>
                         </div>
