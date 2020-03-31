@@ -39,7 +39,7 @@ const Endorsements = ({data}) => {
                         MIKE'S PLATFORM
                     </RedTitle>
                     <div style={{margin: '0.5rem', display: 'flex', justifyContent: 'center'}}>
-                        <Img fixed={data.group.childImageSharp.fixed} />
+                        <Img fixed={data.group.childImageSharp.fixed} alt="Group of Supporters" />
                     </div>
                     <div style={{marginTop: '1rem', display: 'flex', justifyContent: 'center'}}>
                         <div style={{width: '663px'}}>

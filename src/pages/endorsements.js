@@ -87,7 +87,7 @@ const Endorsements = ({data}) => {
                             ...and hundreds and hundreds of your neighbors in Burlingame!
                         </div>
                         <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'center'}}>
-                            <img src={YardSigns} width="771" />
+                            <img src={YardSigns} width="771" alt="Yard Signs" />
                         </div>
                     </div>
                 </SectionContainer>
